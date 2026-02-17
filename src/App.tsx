@@ -11,8 +11,8 @@ function App() {
       <div>
         <h1>Web Tasarımı ve Programlama</h1>
         <h2>Lab-1</h2>
-        <p>Ad Soyad: Muhammed Talha Kavak</p>
-        <p>Öğrenci No: 235541001</p>
+        <p>Ad Soyad: Hilmi Salih Altinisik</p>
+        <p>Öğrenci No: 235541042</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
