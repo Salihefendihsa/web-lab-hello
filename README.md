@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 🚀 Web Lab Hello
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React + TypeScript + Vite kullanılarak geliştirilmiş modern bir web uygulamasıdır.  
+Amaç, React ekosistemini TypeScript ile birlikte kullanarak hızlı ve performanslı bir geliştirme ortamı oluşturmaktır.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Kullanılan Teknolojiler
 
-## React Compiler
+- ⚛️ React
+- 🔷 TypeScript
+- ⚡ Vite
+- 📏 ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Kurulum
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Projeyi klonladıktan sonra bağımlılıkları yükleyin:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+npm install
+▶️ Geliştirme Ortamında Çalıştırma
+npm run dev
+Uygulama varsayılan olarak:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+http://localhost:5173
+adresinde çalışacaktır.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🏗 Production Build Alma
+npm run build
+Build çıktısı dist klasörüne oluşturulur.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📂 Proje Yapısı
+web-lab-hello/
+│
+├── src/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── public/
+├── index.html
+└── package.json
+🎯 Proje Amacı
+React + TypeScript entegrasyonunu öğrenmek
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Modern frontend geliştirme ortamını deneyimlemek
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Vite ile hızlı geliştirme süreci sağlamak
+
+👨‍💻 Geliştirici
+Hilmi Salih Altınışık
+GitHub: https://github.com/Salihefendihsa
+
+Bu proje Web Tasarımı ve Programlama dersi kapsamında geliştirilmiştir.
+
+
+---
+
+# 🔥 İstersen Seviye Atlatabiliriz
+
+Ekleyebiliriz:
+
+- 📸 Ekran görüntüsü
+- 🌍 Canlı demo linki (GitHub Pages)
+- 🧪 Özellikler listesi
+- 🗺 Yol haritası
+- 🏷 Versiyon bilgisi
+
+---
+
+Şimdi sana soruyorum 😎  
+Bu sadece ders için mi?  
+Yoksa portföyde göstereceğin bir proje mi?  
+
+Portföylükse README’yi daha “vitrin” haline getirelim.
